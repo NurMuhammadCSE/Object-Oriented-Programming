@@ -1,0 +1,144 @@
+What is OBJECT-ORIENTED PROGRAMMING?
+Object-oriented programming is a programming paradigm built on the concept of objects.
+Object-Oriented Programming is a programming paradigm that organizes code into objects, which are instances of classes. It improve code reusability and maintainability.
+
+
+TERMINOLOGIES
+Class - A class is a group of objects that share common properties and behavior. It is a blueprint or template from which objects are created.
+A class is a blueprint or template that defines the structure and behavior of objects. It serves as a user-defined data type and encapsulates data (attributes) and methods (functions) that operate on that data.
+Class is a user-defined data type which defines its properties and its functions. Class is the only logical representation of the data.
+
+
+Object- Object is any real-world entity that can have some characteristics or which can perform some tasks. It is also called the instance of a class.
+An object is an instance of a class. It represents a real-world entity and can hold its own state (attributes) and behavior (methods) defined by the class.
+
+
+
+● Constructor : Constructor is a special method which is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as class or structure.
+
+There can be two types of constructors in C++.
+1. Default constructor : A constructor which has no argument is known as default constructor. It is invoked at the time of creating an object.
+2. Parameterized constructor : Constructor which has parameters is called a parameterized constructor. It is used to provide different values to distinct objects.
+3. Copy Constructor : ACopy constructor is an overloaded constructor used to declare and initialize an object from another object. It is of two types - default copy constructor and user defined copy constructor.
+
+
+Destructor - It frees up the resources and memory occupied by an object. Destructors are automatically called when an object is being destroyed.
+
+● Destructor : Adestructor works opposite to constructor; it destructs the
+objects of classes. It can be defined only once in a class. Like constructors, it
+is invoked automatically. Adestructor is defined like a constructor. It must
+have the same name as class, prefixed with a tilde sign (~).
+
+
+
+Why we use object-oriented programming?
+Object-oriented programming is the programming paradigm that is defined using objects. Objects can be considered as real-world instances of entities like class, that have some characteristics and behaviors.
+
+
+OOPs helps users to understand the software easily, although they don’t know the actual implementation.
+With OOPs, the readability, understandability, and maintainability of the code increases multifold.
+Even very big software can be easily written and managed easily using OOPs.
+
+
+
+
+                                Data Abstraction
+
+- Abstraction is the process of hiding all unnecessary implementation or details and showing only important parts. 
+- Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
+- Hiding the implementation and displaying only the functionality to the users.
+- Abstraction is the process of hiding the implementation details of an object and exposing only the relevant features or behavior.
+
+Advantages
+- It reduces the complexity of viewing things.
+- Reduces the duplication of the code
+
+Real Life Example
+Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of the car or applying brakes will stop the car but he does not know about how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car.
+
+
+                                    Encapsulation
+
+- Encapsulation is wrapping up of data and member functions in one single unit called class.
+- It describes the idea of bundling data and methods that work on that data within one unit.
+- Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data within a single unit (i.e., the class).Encapsulation helps in data hiding and protecting the internal state of an object.
+
+
+Advantages
+- Encapsulation protects an object from unwanted access by clients.
+- Simplifies the maintenance of the application
+
+Real Life Example
+A Real-Life Example of Encapsulation is a School Bag.
+
+
+                                    Polymorphism
+- Polymorphism is the ability of objects to take on different forms or behave in different ways depending on the context in which they are used.
+- The word polymorphism means having many forms. It describes the concept that different classes can be used with the same interface.
+Polymorphism is the ability of any data to be processed in more than one form.
+
+
+Polymorphism is divided into two types:
+● Compile Time Polymorphism - Compile time polymorphism, also known as Static Polymorphism, refers to the type of Polymorphism that happens at compile time. What it means is that the compiler decides what shape or value has to be taken by the entity in the picture.
+
+● Compile Time Polymorphism : The polymorphism which is implemented at the compile time is known as compile-time polymorphism. Example - Method Overloading
+
+Method Overloading : Method overloading is a technique which allows you to have more than one function with the same function name but with different functionality. Method overloading can be possible on the following basis:
+1. The return type of the overloaded function.
+2. The type of the parameters passed to the function.
+3. The number of parameters passed to the function.
+
+- Runtime Polymorphism - Runtime polymorphism, also known as Dynamic Polymorphism, refers to the type of Polymorphism that happens at the run time. What it means is it can't be decided by the compiler. Therefore what shape or value has to be taken depends upon the execution. Hence the name Runtime Polymorphism.
+
+● Runtime Polymorphism : Runtime polymorphism is also known as dynamic polymorphism. Function overriding is an example of runtime polymorphism. Function overriding means when the child class contains the method which is already present in the parent class. Hence, the child class overrides the method of the parent class. In case of function
+overriding, parent and child classes both contain the same function with a different definition. The call to the function is determined at runtime is known as runtime polymorphism.
+
+Advantages
+- It helps the programmer to reuse the codes, i.e. classes once written, tested and implemented can be reused as required. Saves a lot of time.
+- A single variable can be used to store multiple data types.
+
+Real Life Example
+Like a man at the same time is a father, a husband, an employee. So the same person possesses different behavior in different situations. This is called polymorphism.
+
+
+
+
+                                    Inheritance
+
+- Inheritance is a mechanism where one class (subclass or derived class) acquires properties and behaviors from another class (superclass or base class).
+- Inheritance is a feature of OOPs which allows subclasses classes to inherit properties from the parent class.
+
+Types of Inheritance
+Single inheritance - When a class inherits from a single class, it is known as a single inheritance
+Multiple inheritances - Multiple inheritances come into the picture when a class inherits from more than one base class.
+Parent 1 && Parent2 → child
+
+Multilevel inheritance - When there is a chain of inheritance, it is known as multilevel inheritance.
+Example: Animal → Dog → Puppy
+Puppy Inherits from the Dog Class, Dog class inherits from the Class Animal.
+
+Hierarchical inheritance - When two or more classes inherit a single class, it is known as hierarchical inheritance.
+Example: Animal → Dog = Cats
+
+Hybrid inheritance - Hybrid inheritance is a combination of multiple and multi-level inheritances.
+
+
+Single Inheritance: A subclass inherits from a single superclass.
+Multiple Inheritance: A subclass inherits from multiple superclasses (supported by some languages like C++).
+Multilevel Inheritance: A class is derived from another class, which, in turn, is derived from a base class.
+Hierarchical Inheritance: Multiple subclasses inherit from a single superclass.
+
+
+Advantages
+The main advantages of inheritance are code reusability and readability. When a child class inherits the properties and functionality of the parent class, we need not to write the same code again in the child class. This makes it easier to reuse the code, makes us write less code and the code becomes much more readable.
+
+
+Real Life Example
+If there is a class such as ‘vehicle’, other classes like ‘car’, ‘bike’, etc can inherit common properties from the vehicle class.
+
+
+What is Overloading and Overriding?
+When two or more methods in the same class have the same name but different parameters, it's called Overloading.
+
+
+When the method name and parameters are the same in the superclass and the child class, it's called Overriding.
