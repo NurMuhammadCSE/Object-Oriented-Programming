@@ -12,6 +12,13 @@ public:
     }
 };
 
+class Rectangle: public Shape{
+public:
+    void draw(){
+        cout<<"Drawing a Rectangle"<<endl;
+    }
+};
+
 void fun(){
     // int x = 0; // 0 0 0
     static int x = 0;
